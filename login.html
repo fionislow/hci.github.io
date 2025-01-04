@@ -24,6 +24,12 @@
             <button type="submit">Login</button>
         </form>
     </div>
+<script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        const role = document.getElementById("role").value;
+        sessionStorage.setItem("role", role);
+    });
+</script>
 
 <footer>
 <p>By Group09</p>
