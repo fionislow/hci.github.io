@@ -48,12 +48,16 @@
                 roleText.textContent = "Sie sind als Student angemeldet";
                 document.getElementById("modul-display-student").textContent = selectedModul;
                 document.getElementById("actions-student").style.display = "block";
+                document.getElementById("actions-tutor").style.display = "none";
             }else if (userRole === "tutor") {
                 roleText.textContent = "Sie sind als Tutor angemeldet";
                 document.getElementById("modul-display-tutor").textContent = selectedModul;
                 document.getElementById("actions-tutor").style.display = "block";
+                document.getElementById("actions-student").style.display = "none";
             } else {
                 roleText.textContent = "Keine gültige Rolle";
+                document.getElementById("actions-tutor").style.display = "none";
+                document.getElementById("actions-student").style.display = "none";
             }}
         });
 
