@@ -22,17 +22,55 @@
         </div>
 
         <div id="actions-student" class="actions-dashboard">
-            <h3> Hier sind deine Schüler in <span id="modul-display-student"></span> </h3>
+            <h3> Hier sind deine Assignments in <span id="modul-display-student"></span> </h3>
             <button onclick="uploadAssignment()"> Assignment hochladen</button>
             <button onclick="viewAssignments()"> Alle Assignments anzeigen </button>
         </div>
 
         <div id="actions-tutor" class="actions-dashboard">
-            <h3> Hier sind deine Assignments in <span id="modul-display-tutor"></span></h3>
+            <h3> Schülerübersicht in <span id="modul-display-tutor"></span></h3>
             <button onclick="reviewAssignments()">Assignments korrigieren</button>
-        </div>
-        
+        </div>   
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const userRole = sessionStorage.getItem("role");
+            const selectedModul = sessionStorage.getItem("role");
+            const roleText = document.getElementById("role-text");
+
+            if(!selectedModul) {
+                document.getElementById("modul-selection").style.display = "block";
+            } else {
+                document.getElementById("modul-selection").style.display = "none";
+            if (userRole === "student") {
+                roleText.textContent = "Sie sind als Student angemeldet";
+                document.getElementById("modul-display-student").textContent = selectedModul;
+                document.getElementById("actions-student").style.display = "block";
+            }else if (userRole === "tutor") {
+                roleText.textContent = "Sie sind als Tutor angemeldet";
+                document.getElementById("modul-display-tutor").textContent = selectedModul;
+                document.getElementById("actions-tutor").style.display = "block";
+            } else {
+                roleText.textContent = "Keine gültige Rolle";
+            }}
+        });
+
+        function saveModul() {
+            const selectedModul = document.getElementById("modul-selected").value;
+            sessionStorage.setItem("selectedModul", selectedModul);
+            window.location.reload();
+        }
+        function reviewAssignment() {
+            window.location.href = 'review.html';
+        }
+        function uploadAssignment() {
+            window.location.href = 'upload.html';  
+        }
+        function viewAssignment() {
+            window.location.href = 'view_assignment.html';
+        }
+    </script>
 
 <footer>
 <p>By Group09</p>
