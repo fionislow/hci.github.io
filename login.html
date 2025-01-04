@@ -24,13 +24,18 @@
             <button type="submit">Login</button>
         </form>
     </div>
-<script>
-    document.querySelector("form").addEventListener("submit", function(event) {
-        const role = document.getElementById("role").value;
-        sessionStorage.setItem("role", role);
-    });
-</script>
-
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const role = document.getElementById("role").value;
+            sessionStorage.setItem("role", role);
+            if (role === "student") {
+                window.location.href = "dashboard_student.html";
+            } else if (role === "tutor") {
+                window.location.href = "dashboard_tutor.html";
+            }
+        });
+    </script>
 <footer>
 <p>By Group09</p>
 </footer>
