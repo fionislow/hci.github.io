@@ -14,15 +14,23 @@
         <div id="modul-selection" class="modul-selection">
             <h3>Wähle ein Modul aus</h3>
             <select id="modul-selected">
-                <option value="Human-Computer-Interaktion"></option>
-                <option value="Human-Computer-Interaktion"></option>
-                <option value="Human-Computer-Interaktion"></option>
+                <option value="Human-Computer-Interaktion">Human-Computer-Interaktion</option>
+                <option value="Programmieren 1">Programmieren 1</option>
+                <option value="Grundlagen der Softwaretechnik">Grundlagen der Softwaretechnik</option>
             </select>
+            <button onclick="saveModul"> Auswählen</button>
         </div>
 
-        <div id="actions-student" class="actions-dashboard"></div>
+        <div id="actions-student" class="actions-dashboard">
+            <h3> Hier sind deine Schüler in <span id="modul-display-student"></span> </h3>
+            <button onclick="uploadAssignment()"> Assignment hochladen</button>
+            <button onclick="viewAssignments()"> Alle Assignments anzeigen </button>
+        </div>
 
-        <div id="actions-tutor" class="actions-dashboard"></div>
+        <div id="actions-tutor" class="actions-dashboard">
+            <h3> Hier sind deine Assignments in <span id="modul-display-tutor"></span></h3>
+            <button onclick="reviewAssignments()">Assignments korrigieren</button>
+        </div>
         
     </div>
 
