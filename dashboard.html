@@ -36,13 +36,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const userRole = sessionStorage.getItem("role");
-            const selectedModul = sessionStorage.getItem("role");
+            const selectedModul = sessionStorage.getItem("SelectedModul");
             const roleText = document.getElementById("role-text");
 
             if(!selectedModul) {
                 document.getElementById("modul-selection").style.display = "block";
             } else {
                 document.getElementById("modul-selection").style.display = "none";
+
             if (userRole === "student") {
                 roleText.textContent = "Sie sind als Student angemeldet";
                 document.getElementById("modul-display-student").textContent = selectedModul;
@@ -61,14 +62,14 @@
             sessionStorage.setItem("selectedModul", selectedModul);
             window.location.reload();
         }
-        function reviewAssignment() {
+        function reviewAssignments() {
             window.location.href = 'review.html';
         }
         function uploadAssignment() {
             window.location.href = 'upload.html';  
         }
-        function viewAssignment() {
-            window.location.href = 'view_assignment.html';
+        function viewAssignments() {
+            window.location.href = 'view_assignments.html';
         }
     </script>
 
