@@ -1,1 +1,47 @@
-"Hello" 
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.dashboard-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0 px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,h3 {
+    color: cadetblue;
+}
+
+button {
+    background-color: antiquewhite;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.actions-dashboard {
+    display: none;
+}
+
+.student .actions-student{
+    display: block;
+}
+
+.tutor .actions-tutor {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+}
