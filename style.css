@@ -1,8 +1,19 @@
 body {
     font-family: Helvetica, sans-serif;
-    margin: 20px;
-    padding: 20px;
+    margin: 0;
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
 }
 
 .dashboard-container {
@@ -16,6 +27,19 @@ body {
 
 h2,h3 {
     color: rgb(12, 71, 73);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: aquamarine;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 button {
@@ -41,7 +65,10 @@ button {
 }
 
 footer {
+    position: absolute;
+    bottom: 5px;
     text-align: left;
-    margin-top: 15px;
     color: black;
+    width: 100%;
+    font-size: 15px;
 }
