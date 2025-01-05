@@ -6,163 +6,161 @@
     <title>Feedback Form</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, sans-serif;
+            background-color: #eef2f7;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            background-color: #f8f8f8;
-            height: 100vh;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        .container {
-            width: 600px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .form-wrapper {
+            width: 650px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
-            font-size: 20px;
-            margin-bottom: 10px;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin: 5px 0;
         }
 
         label {
             display: block;
             font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .grid div {
-            font-size: 14px;
-            font-weight: bold;
+            margin-top: 12px;
         }
 
         table {
             width: 100%;
-            margin-top: 10px;
-            border-collapse: collapse;
+            margin: 15px 0;
+            border-spacing: 0;
+            border: 1px solid #ddd;
         }
 
         table th, table td {
-            padding: 5px;
+            padding: 8px;
             text-align: center;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
         }
 
-        .comments, .file-upload {
-            margin-top: 15px;
+        table th {
+            background-color: #f4f4f4;
         }
 
         textarea {
             width: 100%;
-            height: 60px;
+            height: 80px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 14px;
+            resize: vertical;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 6px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            padding: 5px;
-            font-size: 14px;
-            resize: none;
         }
 
         input[type="file"] {
             margin-top: 10px;
         }
 
-        .buttons {
+        .action-buttons {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
         }
 
-        button {
-            background-color: #007bff;
-            color: white;
+        .action-buttons button {
+            flex-grow: 1;
+            margin: 0 5px;
+            padding: 10px;
             border: none;
             border-radius: 5px;
-            padding: 10px 20px;
+            background-color: #0056d6;
+            color: white;
             cursor: pointer;
-            flex: 1;
-            margin: 0 5px;
+            font-size: 14px;
         }
 
-        button:hover {
-            background-color: #0056b3;
+        .action-buttons button:hover {
+            background-color: #003d99;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="form-wrapper">
         <h1>Programmieren 1: Assignment 9</h1>
         <p><strong>Name:</strong> Max Mustermann</p>
-        <p><strong>E-Mail:</strong> max.mustermann@stud.uni-hannover.de</p>
-
+        <p><strong>Email:</strong> max.mustermann@stud.uni-hannover.de</p>
 
         <table>
-            <tr>
-                <td></td>
-                <td>Disagree</td>
-                <td>Neutral</td>
-                <td>Agree</td>
-            </tr>
-            <tr>
-                <td>Task was easy</td>
-                <td><input type="radio" name="easy" value="disagree"></td>
-                <td><input type="radio" name="easy" value="neutral"></td>
-                <td><input type="radio" name="easy" value="agree"></td>
-            </tr>
-            <tr>
-                <td>Task was fun to work on</td>
-                <td><input type="radio" name="fun" value="disagree"></td>
-                <td><input type="radio" name="fun" value="neutral"></td>
-                <td><input type="radio" name="fun" value="agree"></td>
-            </tr>
-            <tr>
-                <td>Task was helpful to study</td>
-                <td><input type="radio" name="helpful" value="disagree"></td>
-                <td><input type="radio" name="helpful" value="neutral"></td>
-                <td><input type="radio" name="helpful" value="agree"></td>
-            </tr>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Disagree</th>
+                    <th>Neutral</th>
+                    <th>Agree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Task was easy</td>
+                    <td><input type="radio" name="easy" value="disagree"></td>
+                    <td><input type="radio" name="easy" value="neutral"></td>
+                    <td><input type="radio" name="easy" value="agree"></td>
+                </tr>
+                <tr>
+                    <td>Task was fun to work on</td>
+                    <td><input type="radio" name="fun" value="disagree"></td>
+                    <td><input type="radio" name="fun" value="neutral"></td>
+                    <td><input type="radio" name="fun" value="agree"></td>
+                </tr>
+                <tr>
+                    <td>Task was helpful to study</td>
+                    <td><input type="radio" name="helpful" value="disagree"></td>
+                    <td><input type="radio" name="helpful" value="neutral"></td>
+                    <td><input type="radio" name="helpful" value="agree"></td>
+                </tr>
+            </tbody>
         </table>
 
         <label for="hours">Hours spent on task:</label>
         <input type="number" id="hours" name="hours" min="0" max="100">
 
-        <div class="comments">
-            <label for="additional-feedback">Additional feedback:</label>
-            <textarea id="additional-feedback" placeholder="Enter your feedback..."></textarea>
-        </div>
+        <label for="feedback">Additional feedback:</label>
+        <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
 
-        <div class="file-upload">
-            <label for="file">Choose *.zip:</label>
-            <input type="file" id="file" name="file" accept=".zip">
-        </div>
+        <label for="file">Upload your *.zip file:</label>
+        <input type="file" id="file" name="file" accept=".zip">
 
-        <div class="buttons">
-            <button onclick="submitForm()">Submit</button>
-            <button onclick="viewSubmissions()">View previous submissions</button>
+        <div class="action-buttons">
+            <button type="button" onclick="handleSubmit()">Submit</button>
+            <button type="button" onclick="showSubmissions()">View Submissions</button>
         </div>
     </div>
 
     <script>
-        function submitForm() {
-            alert('Assignment submitted!');
-            // Implement form submission logic here
+        function handleSubmit() {
+            alert('Your submission has been successfully sent!');
+            // Hier kann theoretisch das Hochladen implementiert werden.
         }
 
-        function viewSubmissions() {
-            alert('Viewing previous submissions...');
-            // Implement navigation to previous submissions here
+        function showSubmissions() {
+            alert('Navigating to previous submissions...');
+            //Hier sollte eine Verbindung zur Übersichtsseite des Faches sein
         }
     </script>
 </body>
