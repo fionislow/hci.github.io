@@ -8,6 +8,7 @@ body {
     height: 100vh;
 }
 
+
 .login-container {
     background-color: #fff;
     padding: 30px;
@@ -80,10 +81,10 @@ button {
     background-color: rgb(62, 18, 123);
     color: white;
     border: none;
-    padding: 10px 15px;
-    margin: 0 auto;
+    padding: 8px 15px;
+    margin: 5px auto;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .actions-dashboard {
