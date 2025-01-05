@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Seite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 600px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header .course {
+            font-size: 18px;
+            color: #555;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .details .highlight {
+            font-weight: bold;
+        }
+        .remarks {
+            margin: 10px 0 20px;
+            padding: 10px;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 100px;
+            font-size: 14px;
+            color: #333;
+        }
+        .button {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .back {
+            background-color: #6c757d;
+        }
+        .back:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Assignment 9</h1>
+            <span class="course">Prog1</span>
+        </div>
+        <div class="details">
+            <p><span class="highlight">Bewertung:</span> 70/100</p>
+            <p><span class="highlight">Anmerkungen:</span></p>
+            <div class="remarks">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisi vel pharetra ultricies, elit urna consectetur libero, vel aliquet felis sapien eget risus.
+            </div>
+        </div>
+        <a href="#" class="button">Korrektur herunterladen</a>
+        <a href="#" class="button back">Zurück zur Übersicht</a>
+    </div>
+</body>
+</html>
