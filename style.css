@@ -46,6 +46,17 @@ body {
     background-color: rgb(53, 53, 83);
 }
 
+/* Speziel für die Erfolgreich hochgeladen Seite*/
+.return-message{
+    text-align: center;
+}
+
+.return-message image{
+    width: auto;
+    height: auto;
+}
+/*Kommentar Ende*/
+
 h2,h3 {
     color: black;
     margin-bottom: 20px;
