@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="device-view" content="width=device-width, initial-scale">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Übersicht:</h2>
+        <p id="role-text"></p>
+
+        <div id="modul-selection" class="modul-selection">
+            <h3>Wähle ein Modul aus</h3>
+            <select id="modul-selected">
+                <option value="Human-Computer-Interaktion">Human-Computer-Interaktion</option>
+                <option value="Programmieren 1">Programmieren 1</option>
+                <option value="Grundlagen der Softwaretechnik">Grundlagen der Softwaretechnik</option>
+            </select>
+            <button onclick="saveModul"> Auswählen</button>
+        </div>
+
+        <div id="actions-tutor" class="actions-dashboard">
+            <h3> Schülerübersicht in <span id="modul-display-tutor"></span></h3>
+            <button onclick="reviewAssignments()">Assignments korrigieren</button>
+        </div>   
+    </div>
+</body>
+</html>
