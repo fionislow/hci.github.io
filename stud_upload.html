@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+            height: 100vh;
+        }
+
+        .container {
+            width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .grid div {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        .comments, .file-upload {
+            margin-top: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 60px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 14px;
+            resize: none;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programmieren 1: Assignment 9</h1>
+        <p><strong>Name:</strong> Max Mustermann</p>
+        <p><strong>E-Mail:</strong> max.mustermann@stud.uni-hannover.de</p>
+
+
+        <table>
+            <tr>
+                <td></td>
+                <td>Disagree</td>
+                <td>Neutral</td>
+                <td>Agree</td>
+            </tr>
+            <tr>
+                <td>Task was easy</td>
+                <td><input type="radio" name="easy" value="disagree"></td>
+                <td><input type="radio" name="easy" value="neutral"></td>
+                <td><input type="radio" name="easy" value="agree"></td>
+            </tr>
+            <tr>
+                <td>Task was fun to work on</td>
+                <td><input type="radio" name="fun" value="disagree"></td>
+                <td><input type="radio" name="fun" value="neutral"></td>
+                <td><input type="radio" name="fun" value="agree"></td>
+            </tr>
+            <tr>
+                <td>Task was helpful to study</td>
+                <td><input type="radio" name="helpful" value="disagree"></td>
+                <td><input type="radio" name="helpful" value="neutral"></td>
+                <td><input type="radio" name="helpful" value="agree"></td>
+            </tr>
+        </table>
+
+        <label for="hours">Hours spent on task:</label>
+        <input type="number" id="hours" name="hours" min="0" max="100">
+
+        <div class="comments">
+            <label for="additional-feedback">Additional feedback:</label>
+            <textarea id="additional-feedback" placeholder="Enter your feedback..."></textarea>
+        </div>
+
+        <div class="file-upload">
+            <label for="file">Choose *.zip:</label>
+            <input type="file" id="file" name="file" accept=".zip">
+        </div>
+
+        <div class="buttons">
+            <button onclick="submitForm()">Submit</button>
+            <button onclick="viewSubmissions()">View previous submissions</button>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            alert('Assignment submitted!');
+            // Implement form submission logic here
+        }
+
+        function viewSubmissions() {
+            alert('Viewing previous submissions...');
+            // Implement navigation to previous submissions here
+        }
+    </script>
+</body>
+</html>
+
