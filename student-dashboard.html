@@ -8,23 +8,20 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <h2>Übersicht:</h2>
+        <h2>Übersicht deiner Module:</h2>
         <p id="role-text"></p>
 
-        <div id="modul-selection" class="modul-selection">
-            <h3>Wähle ein Modul aus</h3>
-            <select id="modul-selected">
-                <option value="Human-Computer-Interaktion">Human-Computer-Interaktion</option>
-                <option value="Programmieren 1">Programmieren 1</option>
-                <option value="Grundlagen der Softwaretechnik">Grundlagen der Softwaretechnik</option>
-            </select>
-            <button onclick="saveModul"> Auswählen</button>
+        <div class="modul-box">
+            <h3>Human-Computer-Interaktion</h3>
+            <button onclick="window.location.href='hci-assignment-übersicht.html"> Auswählen</button>
         </div>
-
-        <div id="actions-student" class="actions-dashboard">
-            <h3> Hier sind deine Assignments in <span id="modul-display-student"></span> </h3>
-            <button onclick="uploadAssignment()"> Assignment hochladen</button>
-            <button onclick="viewAssignments()"> Alle Assignments anzeigen </button>
+        <div class="modul-box">
+            <h3>Programmieren 1</h3>
+            <button onclick="window.location.href='programmieren-assignment-übersicht.html"> Auswählen</button>
+        </div>
+        <div class="modul-box">
+            <h3>Grundlagen der Softwaretechnik</h3>
+            <button onclick="window.location.href='swt-assignment-übersicht.html"> Auswählen</button>
         </div>
     </div>
 </body>
