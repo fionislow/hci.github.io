@@ -103,9 +103,28 @@
             content: "✘"; /* Weißes Kreuz für "missing" */
             color: white;
         }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #4a90e2;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #4a90e2;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <a href="tutor-dashboard.html" class="back-button">Zurück</a>
     <div class="container">
         <h1>Programmieren I</h1>
         <h2>Übersicht von Max Mustermann</h2>
@@ -181,7 +200,7 @@
                     <td class="status-check"></td>
                     <td class="status-pending"></td>
                     <td>-</td>
-                    <td><button class="upload-btn" onclick="window.location.href='tut_student_assignment.html'">UPLOAD</button></td>
+                    <td><button class="upload-btn">UPLOAD</button></td>
                 </tr>
                 <tr>
                     <td>Assignment 10</td>
