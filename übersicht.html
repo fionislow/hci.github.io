@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmieren I</title>
+    <style>
+        /* Vollbild-Layout */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container-Stil */
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header-Stil */
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* Titel */
+        .overview-title {
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+
+        /* Buttons */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .name-button {
+            padding: 12px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 80%;
+        }
+
+        .name-button:hover {
+            background-color: #2980b9;
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.5);
+        }
+
+        /* Footer-Stil */
+        .footer {
+            margin-top: 25px;
+        }
+
+        .back-button {
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #e74c3c;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4);
+        }
+
+        .back-button:hover {
+            background-color: #c0392b;
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Programmieren I</h1>
+        </div>
+        <div class="overview-title">
+            <h2>Übersicht</h2>
+        </div>
+        <div class="button-container">
+            <!-- Buttons mit deutschen Namen -->
+            <button onclick="window.location.href='AlleAssignments.html'" class="name-button">Max Mustermann</button>
+            <button class="name-button">Erika Mustermann</button>
+            <button class="name-button">Henry Müller</button>
+            <button class="name-button">Anna Schmidt</button>
+            <button class="name-button">Arne Meier</button>
+        </div>
+        <div class="footer">
+            <!-- Zurück-Button -->
+            <button class="back-button" onclick="window.location.href='tutor-dashboard.html'">Zurück</button>
+        </div>
+    </div>
+</body>
+</html>

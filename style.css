@@ -1,15 +1,18 @@
-body {
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
 
 .login-container {
-    background-color: #fff;
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -46,6 +49,19 @@ body {
     background-color: rgb(53, 53, 83);
 }
 
+/* Speziel für die Erfolgreich hochgeladen Seite*/
+.return-message{
+    text-align: center;
+}
+
+.return-message img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+/*Kommentar Ende*/
+
 h2,h3 {
     color: black;
     margin-bottom: 20px;
@@ -67,8 +83,8 @@ button {
     background-color: rgb(62, 18, 123);
     color: white;
     border: none;
-    padding: 10px 15px;
-    margin: 5px 0;
+    padding: 8px 15px;
+    margin: 5px auto;
     cursor: pointer;
     border-radius: 3px;
 }
