@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #fff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,11 +18,10 @@
         }
         .container {
             width: 600px;
-            background: #fff;
-            border: 1px solid #ddd;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 8px;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
         .header {
             display: flex;
@@ -32,10 +32,11 @@
         .header h1 {
             font-size: 24px;
             margin: 0;
+            color: #fff;
         }
         .header .course {
             font-size: 18px;
-            color: #555;
+            color: #dcdde1;
         }
         .details {
             margin-bottom: 20px;
@@ -46,16 +47,16 @@
         }
         .details .highlight {
             font-weight: bold;
+            color: #ecf0f1;
         }
         .remarks {
             margin: 10px 0 20px;
             padding: 10px;
-            background: #f1f1f1;
-            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 4px;
             min-height: 100px;
             font-size: 14px;
-            color: #333;
+            color: #fff;
         }
         .button {
             display: block;
@@ -82,18 +83,18 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Assignment 9</h1>
+            <h1>Assignment 7</h1>
             <span class="course">Prog1</span>
         </div>
         <div class="details">
-            <p><span class="highlight">Bewertung:</span> 70/100</p>
+            <p><span class="highlight">Bewertung:</span> 8/10</p>
             <p><span class="highlight">Anmerkungen:</span></p>
             <div class="remarks">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisi vel pharetra ultricies, elit urna consectetur libero, vel aliquet felis sapien eget risus.
             </div>
         </div>
-        <a href="#" class="button">Korrektur herunterladen</a>
-        <a <button class="button back" onclick="window.location.href='ÜbersichtDerAssignments.html'">Zurück zur Übersicht </button></a>
+        <a href="test.zip" class="button" download>Korrektur herunterladen</a>
+        <button class="button back" onclick="window.location.href='ÜbersichtDerAssignments.html'">Zurück zur Übersicht</button>
     </div>
 </body>
 </html>
