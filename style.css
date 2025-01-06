@@ -11,7 +11,7 @@ body {
 
 
 .login-container {
-    background-color: #fff;
+    background-color: linear-gradient(135deg, #3498db, #8e44ad);
     padding: 30px;
     border-radius: 10px;
     text-align: center;
