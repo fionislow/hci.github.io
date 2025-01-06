@@ -82,24 +82,6 @@
             background-color: #0056b3;
         }
 
-        .back-button {
-            display: inline-block;
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px 20px;
-            color: white;
-            background-color: rgba(255, 255, 255, 0.2);
-            border: 1px solid white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .back-button:hover {
-            background-color: white;
-            color: #4a90e2;
-        }
-
         .contact {
             margin-top: 20px;
         }
@@ -119,9 +101,29 @@
             background-color: white;
             color: #6b3fa0;
         }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #4a90e2;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #4a90e2;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <a href="dashboard.html" class="back-button">Zurück</a>
     <div class="container">
         <h1>Programmieren I</h1>
         <h2>Übersicht</h2>
@@ -141,10 +143,77 @@
                     <td>8/10</td>
                     <td><a href="assignment1.pdf" download class="button">Korrektur herunterladen</a></td>
                 </tr>
-                <!-- Weitere Assignment-Daten können hier hinzugefügt werden -->
+                <tr>
+                    <td>Assignment 02</td>
+                    <td>✔</td>
+                    <td>9/10</td>
+                    <td><a href="assignment2.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 03</td>
+                    <td>✔</td>
+                    <td>7/10</td>
+                    <td><a href="assignment3.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 04</td>
+                    <td>✔</td>
+                    <td>10/10</td>
+                    <td><a href="assignment4.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 05</td>
+                    <td>✔</td>
+                    <td>5/10</td>
+                    <td><a href="assignment5.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 06</td>
+                    <td>✔</td>
+                    <td>4/10</td>
+                    <td><a href="assignment6.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 07</td>
+                    <td>✔</td>
+                    <td>8/10</td>
+                    <td><a href="assignment7.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 08</td>
+                    <td>✔</td>
+                    <td>9/10</td>
+                    <td><a href="assignment8.pdf" download class="button">Korrektur herunterladen</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 09</td>
+                    <td>⭕</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Assignment 10</td>
+                    <td>✘</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Assignment 11</td>
+                    <td>✘</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Assignment 12</td>
+                    <td>✘</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
             </tbody>
         </table>
-        <a href="dashboard.html" class="back-button">Zurück zum Dashboard</a>
+        <div class="contact">
+            <a href="mailto:tutor@example.com">Contact Tutor</a>
+        </div>
     </div>
 </body>
 </html>
