@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmieren I - Übersicht</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #4a90e2, #6b3fa0);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 5px;
+            font-size: 2rem;
+        }
+
+        .container h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #d9d9d9;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        tr {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        a.download-icon {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        a.download-icon:hover {
+            background-color: white;
+            color: #4a90e2;
+            border-color: white;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            background-color: white;
+            color: #6b3fa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programmieren I</h1>
+        <h2>Übersicht</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Status</th>
+                    <th>Grade</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Assignment 01</td>
+                    <td>✔</td>
+                    <td>8/10</td>
+                    <td><a href="assignment1.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 02</td>
+                    <td>✔</td>
+                    <td>9/10</td>
+                    <td><a href="assignment2.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 03</td>
+                    <td>✔</td>
+                    <td>7/10</td>
+                    <td><a href="assignment3.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 04</td>
+                    <td>✔</td>
+                    <td>10/10</td>
+                    <td><a href="assignment4.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 05</td>
+                    <td>✔</td>
+                    <td>5/10</td>
+                    <td><a href="assignment5.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 06</td>
+                    <td>✔</td>
+                    <td>4/10</td>
+                    <td><a href="assignment6.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 07</td>
+                    <td>✔</td>
+                    <td>8/10</td>
+                    <td><a href="assignment7.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 08</td>
+                    <td>✔</td>
+                    <td>9/10</td>
+                    <td><a href="assignment8.pdf" download class="download-icon">⬇️</a></td>
+                </tr>
+                <tr>
+                    <td>Assignment 09</td>
+                    <td>⭕</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Assignment 10</td>
+                    <td>✘</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Assignment 11</td>
+                    <td>✘</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Assignment 12</td>
+                    <td>✘</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contact">
+            <a href="mailto:tutor@example.com">Contact Tutor</a>
+        </div>
+    </div>
+</body>
+</html>
