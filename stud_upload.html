@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
     <style>
-
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom right, #4a90e2, #6b3fa0);
@@ -16,7 +15,6 @@
             align-items: center;
             min-height: 100vh;
         }
-
         .form-wrapper {
             width: 650px;
             background: #ffffff;
@@ -24,39 +22,32 @@
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         }
-
         h1 {
             font-size: 22px;
             margin-bottom: 15px;
         }
-
         p {
             margin: 5px 0;
         }
-
         label {
             display: block;
             font-size: 14px;
             margin-top: 12px;
         }
-
         table {
             width: 100%;
             margin: 15px 0;
             border-spacing: 0;
             border: 1px solid #ddd;
         }
-
         table th, table td {
             padding: 8px;
             text-align: center;
             border: 1px solid #ddd;
         }
-
         table th {
             background-color: #f4f4f4;
         }
-
         textarea {
             width: 100%;
             height: 80px;
@@ -66,40 +57,82 @@
             font-size: 14px;
             resize: vertical;
         }
-
         input[type="number"] {
             width: 100%;
             padding: 6px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
         input[type="file"] {
             margin-top: 10px;
         }
-
         .action-buttons {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
         }
-
         .action-buttons button {
             flex-grow: 1;
             margin: 0 5px;
             padding: 10px;
             border: none;
             border-radius: 5px;
-            background-color: rgb(62, 18, 123);;
+            background-color: rgb(62, 18, 123);
             color: white;
             cursor: pointer;
             font-size: 14px;
         }
-
         .action-buttons button:hover {
             background-color: rgb(53, 53, 83);
         }
+        .back-button {
+            margin-top: 20px;
+        }
+        .back-button button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .back-button button:hover {
+            background-color: #0056b3;
+        }
+        .upload-feedback {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9f7e9;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+            color: #4caf50;
+            display: none;
+        }
+        .upload-feedback.error {
+            background-color: #fdecea;
+            border-color: #f44336;
+            color: #f44336;
+        }
     </style>
+    <script>
+        function handleFileUpload(event) {
+            const fileInput = event.target;
+            const feedbackDiv = document.getElementById('uploadFeedback');
+            const file = fileInput.files[0];
+            
+            if (file) {
+                feedbackDiv.textContent = `File "${file.name}" uploaded successfully. You can revise or change it if needed.`;
+                feedbackDiv.className = 'upload-feedback';
+                feedbackDiv.style.display = 'block';
+            } else {
+                feedbackDiv.textContent = 'No file uploaded. Please select a file.';
+                feedbackDiv.className = 'upload-feedback error';
+                feedbackDiv.style.display = 'block';
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="form-wrapper">
@@ -145,13 +178,18 @@
         <textarea id="feedback" placeholder="Write your feedback here..."></textarea>
 
         <label for="file">Upload your *.zip file:</label>
-        <input type="file" id="file" name="file" accept=".zip">
+        <input type="file" id="file" name="file" accept=".zip" onchange="handleFileUpload(event)">
+
+        <div id="uploadFeedback" class="upload-feedback"></div>
 
         <div class="action-buttons">
             <button type="button" onclick="window.location.href='upload_success_student.html'">Submit</button>
             <button type="button" onclick="window.location.href='ÜbersichtDerAssignments.html'">View Submissions</button>
         </div>
+
+        <div class="back-button">
+            <button type="button" onclick="window.location.href='student-dashboard.html'">Back to Previous Site</button>
+        </div>
     </div>
 </body>
 </html>
-
