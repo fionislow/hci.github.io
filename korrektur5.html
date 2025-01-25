@@ -1,1 +1,114 @@
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Seite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #fff;
+        }
+        .header .course {
+            font-size: 18px;
+            color: #dcdde1;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .details .highlight {
+            font-weight: bold;
+            color: #ecf0f1;
+        }
+        .remarks {
+            margin: 10px 0 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            min-height: 100px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .button {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: rgb(62, 18, 123);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    
+        .back {
+            background-color: #e74c3c;
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4);
+            border: none;
+        }
+        .back:hover {
+            background-color: #c0392b;
+            box-shadow: 0 6px 15px rgba(231, 76, 60, 0.5);
+        }
+         .madagaskar-image {
+            width: 150px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Assignment 7</h1>
+            <span class="course">Prog1</span>
+        </div>
+        <div class="image-section">
+            <!-- Pinguin-Bild -->
+            <img src="https://i.pinimg.com/474x/93/f7/19/93f719e72fc7df6fe72989484aa70b39.jpg" alt="Pinguin" class="madagaskar-image">
+        </div>
+        <div class="details">
+            <p><span class="highlight">Bewertung:</span> 5/10</p>
+            <p><span class="highlight">Anmerkungen:</span></p>
+            <div class="remarks">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur, nisi vel pharetra ultricies, elit urna consectetur libero, vel aliquet felis sapien eget risus.
+            </div>
+        </div>
+        <a href="test.zip" class="button" download>Korrektur herunterladen</a>
+        <button class="button back" onclick="window.location.href='ÜbersichtDerAssignments.html'">Zurück zur Übersicht</button>
+    </div>
+</body>
+</html>
